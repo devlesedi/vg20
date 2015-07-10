@@ -5,28 +5,32 @@ if (Meteor.isClient) {
 
   var the50 = [
     {
-      name: 'Lesedi Ramahobo',
-      category: 'Web Developer',
+      name: 'Margaret Nasha',
+      category: 'Politician',
       position: 1,
-      slug: 'step-1'
+      slug: 'margret-nasha',
+      thumb: 'nasha-bg.png'
     },
     {
-      name: 'Thabies Reba',
-      category: 'Accounting',
-      position: 1,
-      slug: 'step-2'
+      name: 'John Doe',
+      category: 'Unknown',
+      position: 2,
+      slug: 'john-doe',
+      thumb: 'unknown-person.png'
     },
     {
-      name: 'Lesedi Ramahobo',
-      category: 'Web Developer',
-      position: 1,
-      slug: 'step-3'
+      name: 'UFO',
+      category: 'Unknown',
+      position: 3,
+      slug: 'ufo',
+      thumb: 'unknown-person.png'
     },
     {
-      name: 'Lesedi Ramahobo',
-      category: 'Web Developer',
-      position: 1,
-      slug: 'step-4'
+      name: 'See, See?',
+      category: '',
+      position: 4,
+      slug: 'see-see',
+      thumb: 'unknown-person.png'
     }
   ];
 
@@ -230,6 +234,16 @@ Template.home.onRendered(function() {
 
           $next.on('click', { source: 'Arrows'}, nextPage);
           $previous.on('click', { source: 'Arrows'}, previousPage);
+
+          $main.touchwipe({
+            wipeLeft: function () {
+              nextPage();
+            },
+            wipeRight: function() {
+              previousPage();
+            },
+            preventDefaultEvents: false
+          });
           //$page_links.on('click', clickToPage);
           //$(document).on('keydown', { source: 'Keyboard'}, keyboardNav);
           //$list_toggles.on('click', toggleListLayout);
@@ -299,7 +313,6 @@ Template.home.onRendered(function() {
 
   Template.home.helpers({
     counter: function () {
-      console.log(Router.current());
       return Router.current();
     },
     the50: function() {

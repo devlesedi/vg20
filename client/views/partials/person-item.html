@@ -10,7 +10,7 @@
 	  <span data-src="http://ea-cdn.voxmedia.com/production/verge-fifty/images/people/elon-musk/small-d9d1f823.jpg"></span>
 	  <span data-src="http://ea-cdn.voxmedia.com/production/verge-fifty/images/people/elon-musk/small@2x-4e0c200e.jpg" data-media="(max-width: 720px) and (-webkit-min-device-pixel-ratio: 1.3), (max-width: 720px) and (min-device-pixel-ratio: 1.3), (max-width: 720px) and (min-resolution: '124.8dpi')"></span>
 
-	  <span data-src="http://ea-cdn.voxmedia.com/production/verge-fifty/images/people/elon-musk/medium-a13a522a.jpg" data-media="(min-width: 720px) and (max-width: 975px)"><img alt="Elon Musk" src="/img/nasha-bg.png" style="opacity: 1;"></span>
+	  <span data-src="http://ea-cdn.voxmedia.com/production/verge-fifty/images/people/elon-musk/medium-a13a522a.jpg" data-media="(min-width: 720px) and (max-width: 975px)"><img alt="{{firstName}}" src="/img/{{thumb}}" style="opacity: 1;"></span>
 	  <span data-src="http://ea-cdn.voxmedia.com/production/verge-fifty/images/people/elon-musk/medium@2x-8f21a09c.jpg" data-media="(min-width: 720px) and (max-width: 975px) and (-webkit-min-device-pixel-ratio: 1.3), (min-width: 720px) and (max-width: 975px) and (min-device-pixel-ratio: 1.3), (min-width: 720px) and (max-width: 975px) and (min-resolution: '124.8dpi')"></span>
 
 	  <span data-src="http://ea-cdn.voxmedia.com/production/verge-fifty/images/people/elon-musk/large-44d8b63f.jpg" data-media="(min-width: 975px)"></span>
@@ -24,43 +24,45 @@
 
 	      <div class="m-person__content">
 	        <header class="m-person__header">
-	          <div class="m-person__position"><span>01</span></div>
+	          <div class="m-person__position"><span>{{position}}</span></div>
 	          <div class="m-person__name">
 	            <h2 class="">{{firstName}}</h2>
 	          </div>
-	          <div class="m-person__category"><span>The World Changers</span></div>
+	          <div class="m-person__category"><span>{{category}}</span></div>
 	        </header>
 
 	        <aside class="m-person__info">
-	          <h3 class="m-person__titles">Inventor, Entrepreneur</h3>
+	          <h3 class="m-person__titles">Title: </h3>
 	          
-	            <p>Age: 42</p>
+	            <p>Age:</p>
 	          
 	          <ul class="m-person__achievements">
 	            
 	              <li></li>
 	            
-	              <li> CEO and Chief Product Architect, Tesla Motors </li>
+	              <li> Achievement </li>
 	            
-	              <li> CEO and CTO, SpaceX </li>
+	              <li> CEO and CTO, Achievement </li>
 	            
-	              <li> Co-founder, PayPal </li>
+	              <li> Co-founder, Achievement </li>
 	            
-	              <li> Net Worth: $8 billion</li>
+	              <li> Net Worth: Achievement</li>
 	            
 	          </ul>
 	        </aside>
 
 	        <div class="m-person__blurb">
-	          <p>“I’ve said I want to die on Mars. Just not on impact.”</p> <p>If anyone on earth said that you’d smirk, write it off, and move on. Anyone except perhaps Elon Musk, the South African-born billionaire who has made no small plans since earning a fortune selling PayPal to eBay in 2002. In the years since, Musk has spent most of his time floating preposterous ideas and making good on them one by one.</p> <p>First came SpaceX, the commercial space venture that has landed government contracts, hovered a reusable launch vehicle over the <a href="http://www.theverge.com/2013/3/11/4088932/spacex-reusable-rocket-prototype-grasshopper-leaps-to-new-record" target="blank">Texas skies</a>, and successfully docked a spacecraft with the International Space Station, all with the long-term goal of sending humans to Mars. Space travel, historically the exclusive domain of massive government budgets, is suddenly a viable private venture thanks in part to SpaceX. </p> <p>Speaking of expensive, entrenched industries with enormously high barriers to entry, there’s Tesla, the electric automaker founded in 2003. Tesla <a href="http://www.theverge.com/2013/5/8/4313442/tesla-turns-first-profit" target="blank">turned its first profit this year</a>, beating giants to the market in the process with a mass-produced, all-electric family sedan.</p> <p>But Tesla might be the tamest, least surprising thing Musk ends up doing in his career as a billionaire with big ideas: he recently proposed and laid out plans for the Hyperloop, an ultra-high-speed mass transit system.</p> <p>Rockets, cars of the future, and a <a href="http://www.theverge.com/2013/9/5/4699214/elon-musk-iron-man-lab-revealed-video" target="blank">gesture-controlled laboratory</a> all underwritten by a seemingly limitless supply of money? It’s no wonder Musk is frequently called a real-life Tony Stark.</p>
+	          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis eget porttitor orci. Duis ac lacinia nulla. Aliquam semper tortor neque. Nunc convallis elit non augue tempor interdum. Duis et suscipit quam. Morbi sapien mauris, laoreet et dui et, facilisis congue enim. Etiam commodo porta nulla, nec egestas mi efficitur at. Sed vel venenatis lectus. Sed bibendum urna at purus sollicitudin fringilla. Sed pulvinar nibh id aliquam rhoncus. Morbi interdum mi ut placerat mollis. In at erat ac arcu bibendum blandit non et ligula.<br/>
+
+Etiam vitae massa justo. Etiam libero risus, tempus ac lorem sed, commodo volutpat dolor. Fusce at viverra augue. Nulla scelerisque ornare porta. Nulla facilisi. Nam fringilla sapien at dui ultricies interdum. Donec quis massa vitae risus ultrices pulvinar a ac ex. Curabitur a ipsum ac urna gravida scelerisque. Pellentesque id porttitor risus. Morbi condimentum mi lectus, eget ultrices lorem dignissim a. Etiam rhoncus nulla quis interdum porta. Praesent scelerisque dolor non egestas semper. Donec laoreet lacinia lectus, sit amet consequat arcu vulputate non. Nam ultrices nisl tellus, ornare eleifend nisi ullamcorper sed.</p>
 	        </div>
 
 	        <div class="m-person__share">
 	          <h4>Share</h4>
 	          <div class="m-person__share-buttons">
-	            <a class="m-person__twitter" title="Share Elon Musk's The Verge 50 profile on Twitter" data-social="Twitter" data-shared="Elon Musk" href="https://twitter.com/share?url=http%3A%2F%2Fwww.theverge.com%2Fa%2Fthe-verge-50%2Felon-musk&amp;via=verge&amp;text=The+Verge+50%3A+Elon+Musk">Twitter</a>
-	            <a class="m-person__facebook" title="Share Elon Musk's The Verge 50 profile on Facebook" data-social="Facebook" data-shared="Elon Musk" href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fwww.theverge.com%2Fa%2Fthe-verge-50%2Felon-musk">Facebook</a>
-	            <a class="m-person__google" title="Share Elon Musk's The Verge 50 profile on Google+" data-social="Google+" data-shared="Elon Musk" href="https://plus.google.com/share?url=http%3A%2F%2Fwww.theverge.com%2Fa%2Fthe-verge-50%2Felon-musk">Google</a>
+	            <a class="m-person__twitter" title="Share {{firstName}}'s VG 20 profile on Twitter" data-social="Twitter" data-shared="{{firstName}}" href="https://twitter.com/share?url=http%3A%2F%2Fvg20.vgbots.com%2Fa%2Fvg-20-%2&amp;via=vgbots&amp;text=Coming+Soon">Twitter</a>
+	            <a class="m-person__facebook" title="Share Elon Musk's The Verge 50 profile on Facebook" data-social="Facebook" data-shared="{{firstName}}" href="#">Facebook</a>
+	            <a class="m-person__google" title="" data-social="Google+" data-shared="{{firstName}}" href="#">Google</a>
 	          </div>
 	        </div>
 	      </div>
