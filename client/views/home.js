@@ -23,13 +23,13 @@ if (Meteor.isClient) {
       category: 'Unknown',
       position: 3,
       slug: 'ufo',
-      thumb: 'unknown-person.png'
+      thumb: 'alien-512.png'
     },
     {
-      name: 'See, See?',
+      name: 'Radio Head',
       category: '',
       position: 4,
-      slug: 'see-see',
+      slug: 'radio-head',
       thumb: 'unknown-person.png'
     }
   ];
